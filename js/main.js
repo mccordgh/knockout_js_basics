@@ -7,9 +7,9 @@ const AppViewModel = function() {
         return `${this.lastName()}, ${this.firstName()}`;
     }, this);
 
-    this.capitalizeLastName = () => {
-        let currentVal = this.lastName();
-        this.lastName(currentVal.toUpperCase());
+    this.capitalizeNames = () => {
+        this.firstName(this.firstName().toUpperCase());
+        this.lastName(this.lastName().toUpperCase());
     };
 };
 
